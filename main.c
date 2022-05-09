@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 12:09:31 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/09 15:19:46 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/05/09 16:48:11 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,11 +62,45 @@ int	t_isalnum(void)
 	return (0);
 }
 
+int	t_isascii(void)
+{
+	unsigned int	t;
+
+	t = 0;
+	printf("********* ft_isascii \n");
+	while (t < 256)
+	{
+		if (isascii(t) != ft_isascii(t))
+			printf("ERR! (%d): %d-%d \n", t, isascii(t), ft_isascii(t));
+	t++;
+	}
+	printf("******** DONE! \n\n");
+	return (0);
+}
+
+int	t_isprint(void)
+{
+	unsigned int	t;
+
+	t = 0;
+	printf("********* ft_isprint \n");
+	while (t < 256)
+	{
+		if (isprint(t) != ft_isprint(t))
+			printf("ERR! (%d): %d-%d \n", t, isprint(t), ft_isprint(t));
+	t++;
+	}
+	printf("******** DONE! \n\n");
+	return (0);
+}
+
 int	main(void)
 {
 	printf("\n");
 	t_isalpha();
 	t_isdigit();
 	t_isalnum();
+	t_isascii();
+	t_isprint();
 	return (0);
 }
