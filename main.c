@@ -6,13 +6,33 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 12:09:31 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/09 16:48:11 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/05/09 18:05:41 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 #include "libft.h"
+
+int	t_isalpha(void);
+int	t_isdigit(void);
+int	t_isalnum(void);
+int	t_isascii(void);
+int	t_isprint(void);
+int	t_strlen(void);
+
+int	main(void)
+{
+	printf("\n");
+	t_isalpha();
+	t_isdigit();
+	t_isalnum();
+	t_isascii();
+	t_isprint();
+	t_strlen();
+	return (0);
+}
 
 int	t_isalpha(void)
 {
@@ -94,13 +114,20 @@ int	t_isprint(void)
 	return (0);
 }
 
-int	main(void)
+int	t_strlen(void)
 {
-	printf("\n");
-	t_isalpha();
-	t_isdigit();
-	t_isalnum();
-	t_isascii();
-	t_isprint();
+	unsigned int	n1, n2;
+	unsigned int	t_n1, t_n2;
+
+	n1 = strlen("Born to code");
+	t_n1 = ft_strlen("Born to code");
+	n2 = "";
+	t_n2 = "";
+	printf("********* ft_strlen \n");
+	if (n1 != t_n1)
+		printf(" ERR! %d - %d", n1, t_n1);
+	if (n2 != t_n2)
+		printf(" ERR! %d - %d", n2, t_n2);
+printf("******** DONE! \n\n");
 	return (0);
 }
