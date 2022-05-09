@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 12:09:31 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/09 14:52:42 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/05/09 15:19:46 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,27 @@ int	t_isdigit(void)
 	return (0);
 }
 
+int	t_isalnum(void)
+{
+	unsigned int	t;
+
+	t = 0;
+	printf("******** ft_isalnum \n");
+	while (t < 256)
+	{
+		if (isalnum(t) != ft_isalnum(t))
+			printf("ERR! (%d): %d-%d \n", t, isalnum(t), ft_isalnum(t));
+		t++;
+	}
+	printf("******** DONE! \n\n");
+	return (0);
+}
+
 int	main(void)
 {
 	printf("\n");
 	t_isalpha();
 	t_isdigit();
+	t_isalnum();
 	return (0);
 }
