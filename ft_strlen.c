@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/09 16:59:54 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/09 17:19:37 by bda-silv         ###   ########.fr       */
+/*   Created: 2022/05/11 08:38:32 by bda-silv          #+#    #+#             */
+/*   Updated: 2022/05/11 13:29:10 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,9 @@ int	ft_strlen(const char *s)
 	int	i;
 
 	i = 0;
-	while (*s)
+	while (s[i] != '\0')
 	{
 		i++;
-		s++;
 	}
 	return (i);
 }
