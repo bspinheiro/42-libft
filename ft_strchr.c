@@ -6,18 +6,19 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 06:52:57 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/18 11:04:25 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/05/18 15:18:52 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	while (*s != '\0')
 	{
-		if (c == *s)
+		if (*s == c)
 			return ((char *)s);
 		s++;
 	}
-	return(0);
+	if (*s == 0)
+		return ((char *)s);
+	return (0);
 }
-
