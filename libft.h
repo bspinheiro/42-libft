@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 10:37:45 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/19 16:10:24 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/05/19 16:21:38 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_strlen(char *s);
 char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
 void	*ft_memset(void *s, int c, unsigned int len);
 void	ft_bzero(void *s,  unsigned int n);
 //void	*ft_memcpy(void *dst, const void src, unsigned int n);
-//char	ft_strrchr(const char *s, int c);
 
 #endif
