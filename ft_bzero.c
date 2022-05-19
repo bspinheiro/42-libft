@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/18 06:52:57 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/19 09:58:42 by bda-silv         ###   ########.fr       */
+/*   Created: 2022/05/19 11:19:21 by bda-silv          #+#    #+#             */
+/*   Updated: 2022/05/19 15:11:52 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *s, int c)
+/*
+SYNOPSIS
+     void
+     bzero(void *s, size_t n);
+
+DESCRIPTION
+     The bzero() function writes n zeroed bytes to the string s.  If n is zero,
+     bzero() does nothing.
+*/
+
+#include "libft.h"
+
+void	ft_bzero(void *s, unsigned int n)
 {
-	while (*s != '\0')
-	{
-		if (*s == c)
-			return ((char *)s);
-		s++;
-	}
-	if (*s == 0)
-		return ((char *)s);
-	return (0);
+	ft_memset((char *)s, 0, n);
 }
