@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 12:09:31 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/11 13:48:12 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/05/23 15:49:18 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int	t_toupper(void);
 int	t_tolower(void);
 int	t_strchr(void);
 int	t_strlen(void);
+int	t_memcpy(void);
 
 int	main(void) {
 	prt("  ",2);
@@ -216,5 +217,13 @@ int	t_strlen(void)
 	return (0);
 }
 
+int	t_memcpy(void)
+{
+	//const char *a = "test basic du memcpy !";
+	//char b[22];
+	
+	//printf("%s", ft_memcpy(b, a, 22));
+	return (0) ;
+}
 
 
