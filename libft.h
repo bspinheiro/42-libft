@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 10:37:45 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/24 15:06:10 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/05/27 10:47:36 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ void	*ft_memset(void *s, int c, unsigned int len);
 void	ft_bzero(void *s, unsigned int n);
 void	*ft_memcpy(void *dst, const void *src, unsigned int n);
 void	*ft_memchr(const void *s, int c, unsigned int n);
+void	*ft_memmove(void *dst, const void *src, unsigned int len);
 
 #endif
