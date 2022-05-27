@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 07:31:37 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/23 15:41:27 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/05/27 09:50:52 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,11 @@ void	*ft_memcpy(void *dst, const void *src, unsigned int n)
 	while (n--)
 	{
 		*_dst++ = *_src++;
-		printf("%i \n", *_dst);
+		//printf("%i \n", *_dst);
 	}
 
 	return (_dst);
 }
-
 */
 
 void	*ft_memcpy(void *dst, const void *src, unsigned int n)
