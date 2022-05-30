@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 10:41:59 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/27 15:11:00 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/05/30 07:21:46 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ void	*ft_memmove(void *dst, const void *src, unsigned int len)
 
 	_dst = (unsigned char *)dst;
 	_src = (unsigned char *)src;
-	if (_dst < _src)
+	if (_dst <= _src)
 		return (ft_memcpy(dst, src, len));
 	else
 	{
