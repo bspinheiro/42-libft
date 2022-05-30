@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 12:09:31 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/23 15:49:18 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/05/30 11:32:54 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,31 +20,6 @@
 void prt(char s[16], const int a);
 void rgen(char *r, const int len);
 int wgen(void);
-
-int	t_isalpha(void);
-int	t_isdigit(void);
-int	t_isalnum(void);
-int	t_isascii(void);
-int	t_isprint(void);
-int	t_toupper(void);
-int	t_tolower(void);
-int	t_strchr(void);
-int	t_strlen(void);
-int	t_memcpy(void);
-
-int	main(void) {
-	prt("  ",2);
-	t_isalpha();
-	t_isdigit();
-	t_isalnum();
-	t_isascii();
-	t_isprint();
-	t_toupper();
-	t_tolower();
-	t_strchr();
-	t_strlen();
-	return (0);
-}
 
 void prt(char s[16], const int a) {
 	if (a == 0)
@@ -224,6 +199,21 @@ int	t_memcpy(void)
 	
 	//printf("%s", ft_memcpy(b, a, 22));
 	return (0) ;
+}
+
+int	main(void) {
+	prt("  ",2);
+	t_isalpha();
+	t_isdigit();
+	t_isalnum();
+	t_isascii();
+	t_isprint();
+	t_toupper();
+	t_tolower();
+	t_strchr();
+	t_strlen();
+
+	return (0);
 }
 
 
