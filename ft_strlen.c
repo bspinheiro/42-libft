@@ -6,11 +6,11 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 08:38:32 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/11 13:29:10 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/01 08:15:48 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *s)
+unsigned int	ft_strlen(const char *s)
 {
 	int	i;
 

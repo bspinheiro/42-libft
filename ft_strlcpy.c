@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 07:31:21 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/30 14:04:17 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/01 08:03:41 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,21 +51,16 @@
 
 unsigned int	ft_strlcpy(char *dst, const char *src, unsigned int dstlen)
 {
-	unsigned int	srclen;
-	unsigned int	i;
+	const char	*buf;
 
-	i = 0;
-	srclen = ft_strlen((char *)src);
-	if (dstlen == 0)
+	if (!dst || !src)
 		return (0);
-	else
+	buf = src;
+	if (src && dst && dstlen)
 	{
-		while (i < dstlen - 1 && src[i] != '\0' )
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = '\0';
-		return (srclen);
+		while (*src && --dstlen)
+			*dst++ = *src++;
+		*dst = 0;
 	}
+	return (ft_strlen((char *)buf));
 }
