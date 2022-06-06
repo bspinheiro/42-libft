@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 10:37:45 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/01 10:57:35 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/03 08:06:52 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ unsigned int	ft_strlen(char *s);
 unsigned int	ft_strlcpy(char *dst, const char *src, unsigned int n);
 unsigned int	ft_strlcat(char *dst, const char *src, unsigned int n);
 int				ft_memcmp(const void *s1, const void *s2, unsigned int n);
+int				ft_strncmp(const char *s1, const char *s2, unsigned int n);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
 char			*ft_strnstr(const char *hstk, const char *ndl, unsigned int n);

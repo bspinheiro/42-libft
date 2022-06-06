@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 10:50:24 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/02 15:20:22 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/06 13:31:41 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,20 +34,21 @@
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *hay, const char *ndl, unsigned int n)
+char	*ft_strnstr(const char *hay, const char *needle, unsigned int n)
 {
 	unsigned int	i;
+	unsigned int	n_needle;
 
-	if (!*ndl)
+	n_needle = ft_strlen((char *)needle);
+	if (!*needle)
 		return ((char *)hay);
-	else
+	i = 0;
+	while (*hay && i < n)
 	{
-		i = 0;
-		while (*(ndl + i) && i < n)
-		{
-			return (ft_strchr(hay, *ndl));
-			i++;
-		}
+		if ((ft_strncmp(hay, needle, n_needle) == 0) && (i + n_needle <= n))
+			return ((char *)hay);
+		hay++;
+		i++;
 	}
 	return (0);
 }
