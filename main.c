@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 12:09:31 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/30 11:32:54 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/08 14:42:41 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -198,11 +198,20 @@ int	t_memcpy(void)
 	//char b[22];
 	
 	//printf("%s", ft_memcpy(b, a, 22));
-	return (0) ;
+	return (0);
+}
+
+int	t_atoi(void)
+{
+	char	str[] = "15248697";
+	//printf("%d",atoi(str));
+	ft_atoi(str);
+	return (0);
 }
 
 int	main(void) {
 	prt("  ",2);
+	/*
 	t_isalpha();
 	t_isdigit();
 	t_isalnum();
@@ -212,7 +221,8 @@ int	main(void) {
 	t_tolower();
 	t_strchr();
 	t_strlen();
-
+	*/
+	t_atoi();
 	return (0);
 }
 
