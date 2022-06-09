@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 10:37:45 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/08 10:25:25 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/09 09:29:11 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <stdlib.h>
 
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
@@ -36,5 +37,6 @@ void			*ft_memset(void *s, int c, unsigned int n);
 void			*ft_memcpy(void *dst, const void *src, unsigned int n);
 void			*ft_memchr(const void *s, int c, unsigned int n);
 void			*ft_memmove(void *dst, const void *src, unsigned int n);
+void			*ft_calloc(size_t count, size_t size);
 
 #endif
