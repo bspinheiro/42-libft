@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 10:37:45 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/09 09:29:11 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/09 10:34:07 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ int				ft_memcmp(const void *s1, const void *s2, unsigned int n);
 int				ft_strncmp(const char *s1, const char *s2, unsigned int n);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
-char			*ft_strnstr(const char *hstk, const char *ndl, unsigned int n);
+char			*ft_strnstr(const char *hay, const char *ndl, unsigned int n);
+char			*ft_strdup(const char *s);
 void			ft_bzero(void *s, unsigned int n);
 void			*ft_memset(void *s, int c, unsigned int n);
 void			*ft_memcpy(void *dst, const void *src, unsigned int n);
