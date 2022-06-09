@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 14:58:22 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/27 10:07:53 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/09 14:26:12 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,9 @@
      is not required by C and portable code should only depend on the sign of
 	 the returned value.
 */
+#include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, unsigned int n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*p1;
 	const unsigned char	*p2;

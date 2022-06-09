@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 11:19:21 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/19 15:11:52 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/09 14:33:02 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ DESCRIPTION
 
 #include "libft.h"
 
-void	ft_bzero(void *s, unsigned int n)
+void	ft_bzero(void *s, size_t n)
 {
 	ft_memset((char *)s, 0, n);
 }

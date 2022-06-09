@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 08:31:45 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/02 14:46:24 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/09 14:21:21 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 
 #include "libft.h"
 
-unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dstlen)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstlen)
 {
 	unsigned int	i;
 	unsigned int	j;

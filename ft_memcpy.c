@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 07:31:37 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/27 10:31:39 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/09 14:36:15 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,11 @@ void	*ft_memcpy(void *dst, const void *src, unsigned int n)
 	return (_dst);
 }
 */
+#include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, unsigned int n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	if (((char *)dst) == ((char *)src) && n > 0)

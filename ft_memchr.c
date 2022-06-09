@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 09:02:33 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/24 13:48:06 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/09 14:39:53 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -19,7 +19,9 @@
 	 such byte exists within n bytes.
 */
 
-void	*ft_memchr(const void *s, int c, unsigned int n)
+#include "libft.h"
+
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*p;
 

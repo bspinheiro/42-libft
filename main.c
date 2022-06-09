@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 12:09:31 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/08 14:42:41 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/09 15:13:00 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -209,6 +209,20 @@ int	t_atoi(void)
 	return (0);
 }
 
+int	t_strlcpy(void)
+{
+	char a[] = "12345";
+	char b[4] = "";
+	char c[4] = "";
+	int i;
+
+	i = ft_strlcpy(b, a, 4);
+	printf ("%s, %i\n", b, i);
+	i = strlcpy(c, a, 4);
+	printf ("%s, %i", c, i);
+	return (0);
+}
+
 int	main(void) {
 	prt("  ",2);
 	/*
@@ -223,6 +237,7 @@ int	main(void) {
 	t_strlen();
 	*/
 	t_atoi();
+	t_strlcpy();
 	return (0);
 }
 

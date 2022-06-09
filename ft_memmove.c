@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 10:41:59 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/30 07:21:46 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/09 14:40:22 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@
 */
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, unsigned int len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char		*_dst;
 	const unsigned char	*_src;

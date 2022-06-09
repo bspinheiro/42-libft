@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 11:34:39 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/05/24 09:45:56 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/09 14:38:16 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,16 @@ DESCRIPTION
 RETURN VALUES
      The memset() function returns its first argument.
 */
+#include "libft.h"
 
-void	*ft_memset(void *s, int c, unsigned int len)
+void	*ft_memset(void *s, int c, size_t len)
 {
 	char	*str;
-	int		i;
+	size_t	i;
 
 	str = s;
 	i = 0;
-	while ((unsigned int)i < len)
+	while (i < len)
 	{
 		str[i] = (unsigned char)c;
 		i++;

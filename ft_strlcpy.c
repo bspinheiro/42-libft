@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 07:31:21 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/01 08:17:29 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/09 14:55:19 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,12 +49,10 @@
 
 #include "libft.h"
 
-unsigned int	ft_strlcpy(char *dst, const char *src, unsigned int dstlen)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstlen)
 {
 	const char	*buf;
 
-	if (!dst || !src)
-		return (0);
 	buf = src;
 	if (src && dst && dstlen)
 	{
