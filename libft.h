@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 10:37:45 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/10 10:30:38 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/10 10:44:53 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,6 @@ void			*ft_memchr(const void *s, int c, size_t n);
 void			*ft_memmove(void *dst, const void *src, size_t n);
 void			*ft_calloc(size_t count, size_t size);
 void			ft_putchar_fd(char c, int fd);
+void			ft_putstr_fd(char *s, int fd);
 
 #endif
