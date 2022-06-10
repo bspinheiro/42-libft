@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 07:31:21 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/09 14:55:19 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/09 15:18:27 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstlen)
 {
 	const char	*buf;
 
+	if (!dst || !src)
+		return (ft_strlen(src));
 	buf = src;
 	if (src && dst && dstlen)
 	{

@@ -6,11 +6,11 @@
 #    By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/18 10:03:04 by bda-silv          #+#    #+#              #
-#*   Updated: 2022/05/23 14:02:11 by                  ###   ########.fr       *#
+#*   Updated: 2022/06/10 10:18:23 by                  ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
-# TODO: BONUS
+# TODO: Inserir nome de arquivos em vez de wildcard
 
 NAME	=	libft.a
 
@@ -26,8 +26,9 @@ RM		=	rm -f
 all:		$(NAME)
 
 $(NAME):	$(OBJS)
-			ar rcs $(NAME) $(OBJS)
+			ar -rcs $(NAME) $(OBJS)
 			ranlib $(NAME)
+
 clean:
 			$(RM) $(OBJS)
 
