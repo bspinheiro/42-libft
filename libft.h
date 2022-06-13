@@ -6,7 +6,7 @@
 /*   By: bda-silv <bda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 10:37:45 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/10 12:24:37 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/13 10:49:37 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
+void			ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif
