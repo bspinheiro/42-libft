@@ -6,7 +6,7 @@
 #    By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/18 10:03:04 by bda-silv          #+#    #+#              #
-#*   Updated: 2022/06/10 10:18:23 by                  ###   ########.fr       *#
+#*   Updated: 2022/06/15 21:03:02 by                  ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,4 +37,4 @@ fclean:		clean
 
 re:			fclean all
 
-.PHONY:		all clean fclean re
+.PHONY:		all clean fclean re test
