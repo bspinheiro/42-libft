@@ -6,19 +6,9 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 11:19:21 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/09 14:33:02 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/18 15:36:04 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-     void
-     bzero(void *s, size_t n);
-
-DESCRIPTION
-     The bzero() function writes n zeroed bytes to the string s.  If n is zero,
-     bzero() does nothing.
-*/
 
 #include "libft.h"
 

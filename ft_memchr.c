@@ -6,18 +6,9 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 09:02:33 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/09 14:39:53 by bda-silv         ###   ########.fr       */
+/*   Updated: 2022/06/18 15:38:17 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
- DESCRIPTION
-     The memchr() function locates the first occurrence of c (converted to an 
-	 unsigned char) in string s.
-
- RETURN VALUES
-     The memchr() function returns a pointer to the byte located, or NULL if no
-	 such byte exists within n bytes.
-*/
 
 #include "libft.h"
 
