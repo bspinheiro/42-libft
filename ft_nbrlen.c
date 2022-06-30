@@ -1,39 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/17 15:42:18 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/30 00:37:03 by bda-silv         ###   ########.fr       */
+/*   Created: 2022/06/29 23:13:59 by bda-silv          #+#    #+#             */
+/*   Updated: 2022/06/29 23:18:29 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_itoa(int n)
+int	ft_nbrlen(int n, int base)
 {
-	long int	nb;
-	size_t		l;
-	char		*str;
+	int	i;
 
-	nb = n;
-	l = ft_nbrlen(n, 10) - 1;
-	str = ft_calloc(ft_nbrlen(n, 10) + 1, sizeof(char));
-	if (!str)
-		return (NULL);
-	if (nb < 0)
+	if (n == 0)
+		return (1);
+	i = 0;
+	while (n > 0)
 	{
-		str[0] = '-';
-		nb = -nb;
+		n /= base;
+		i++;
 	}
-	if (nb == 0)
-		str[0] = '0';
-	while (nb != 0)
-	{
-		str[l--] = nb % 10 + '0';
-		nb /= 10;
-	}
-	return (str);
+	return (i);
 }

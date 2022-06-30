@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_utoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/17 15:42:18 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/30 00:37:03 by bda-silv         ###   ########.fr       */
+/*   Created: 2022/06/29 23:13:22 by bda-silv          #+#    #+#             */
+/*   Updated: 2022/06/30 00:40:35 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa(int n)
+char	*ft_utoa(unsigned int n)
 {
 	long int	nb;
 	size_t		l;
@@ -23,11 +23,6 @@ char	*ft_itoa(int n)
 	str = ft_calloc(ft_nbrlen(n, 10) + 1, sizeof(char));
 	if (!str)
 		return (NULL);
-	if (nb < 0)
-	{
-		str[0] = '-';
-		nb = -nb;
-	}
 	if (nb == 0)
 		str[0] = '0';
 	while (nb != 0)
