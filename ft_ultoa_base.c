@@ -1,54 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_ultoa_base.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/17 15:42:18 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/07/04 09:24:21 by bda-silv         ###   ########.fr       */
+/*   Created: 2022/06/30 00:37:29 by bda-silv          #+#    #+#             */
+/*   Updated: 2022/07/04 09:55:14 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_dc(int n)
+char	*ft_ultoa_base(unsigned long n, unsigned int base)
 {
-	size_t	digits;
-
-	digits = 0;
-	if (n <= 0)
-		digits++;
-	while (n != 0)
-	{
-		n = n / 10;
-		digits++;
-	}
-	return (digits);
-}
-
-char	*ft_itoa(int n)
-{
-	long int	nb;
-	size_t		l;
+	char		*b;
+	int			len;
 	char		*str;
 
-	nb = n;
-	l = ft_dc(nb) - 1;
-	str = ft_calloc(ft_dc(nb) + 1, sizeof(char));
+	if (base <= 0)
+		return (NULL);
+	len = ft_nbrlen(n, base);
+	str = ft_calloc(len + 1, sizeof(char));
 	if (!str)
 		return (NULL);
-	if (nb < 0)
+	b = ft_substr("0123456789abcdefghijklmnopqrstuvwxyz", 0, base);
+	if (!b)
+		return (NULL);
+	if (n == 0)
+		str[0] = b[0];
+	while (len > 0)
 	{
-		str[0] = '-';
-		nb = -nb;
+		str[--len] = b[n % base];
+		n /= base;
 	}
-	if (nb == 0)
-		str[0] = '0';
-	while (nb != 0)
-	{
-		str[l--] = nb % 10 + '0';
-		nb /= 10;
-	}
+	if (b)
+		free(b);
 	return (str);
 }
