@@ -6,7 +6,6 @@
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 23:13:59 by bda-silv          #+#    #+#             */
-<<<<<<< HEAD
 /*   Updated: 2022/07/04 09:27:55 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -16,15 +15,6 @@
 int	ft_nbrlen(unsigned long long n, unsigned int base)
 {
 	size_t	i;
-=======
-/*   Updated: 2022/06/29 23:18:29 by bda-silv         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-int	ft_nbrlen(int n, int base)
-{
-	int	i;
->>>>>>> 4abe30c9b654544c3139b4d254c51e3f0a0fd7e8
 
 	if (n == 0)
 		return (1);

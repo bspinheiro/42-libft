@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   f_arg_x.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bda-silv <bda-silv@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/18 06:52:57 by bda-silv          #+#    #+#             */
-/*   Updated: 2022/06/18 15:47:09 by bda-silv         ###   ########.fr       */
+/*   Created: 2022/06/30 01:12:48 by bda-silv          #+#    #+#             */
+/*   Updated: 2022/07/04 09:49:35 by bda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *s, int c)
+#include "ft_printf.h"
+
+int	f_arg_x(int isupper, int *counter, va_list ap)
 {
-	while (*s != '\0')
+	char	*s;
+	int		i;
+
+	i = 0;
+	s = ft_itoa_base(va_arg(ap, unsigned int), 16);
+	if (isupper == 1)
 	{
-		if (*s == (unsigned char)c)
-			return ((char *)s);
-		s++;
+		while (s[i])
+		{
+			s[i] = ft_toupper((char)s[i]);
+			i++;
+		}
 	}
-	if (c == 0)
-		return ((char *)s);
-	return (0);
+	*counter += ft_strlen(s);
+	ft_putstr_fd(s, 1);
+	if (s)
+		free(s);
+	return (*counter);
 }
